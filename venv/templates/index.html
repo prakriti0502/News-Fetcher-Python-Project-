@@ -18,20 +18,21 @@
 
 	</head>
 	<body>
-		<div class="container">
+		<div>
 			 <div class="jumbotron">
-			 	<div class="content-wrap text-center">
-				    <h1>News Fetcher<br><p>Find any current news easily!!</p></h1>
+			 	<div class=" text-center">
+				    <h1>News Fetcher<br><p>Get News from any website</p></h1>
 				 	<form method="POST" action="/search">
 				    <input id="tags" type="text" name="search" placeholder="https://example.com"autofocus="on" list="defaultURLs">
 				    <datalist id="defaultURLs">
-				    	<option value="https://timesofindia.indiatimes.com/" label="TimesOfIndia">
 				    	<option value="https://www.tribuneindia.com/" label="TribuneIndia">
+						<option value="https://www.indiatoday.in/" label="IndiaToday">
+                        <option value="https://indianexpress.com/" label="TheIndianExpress">
 				    </datalist>
 				    <br>
 				    <button id="getResult" class="btn btn-default"><i class="fa fa-search"></i>Search</button>
 				    </form>
-				    <h3 style="color: white;">{{msg}}</h3>
+				    <h3 style="color: blue;">{{msg}}</h3>
 				</div>
 			    <div class="wrap text-center">
 				    <ul>
